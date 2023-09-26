@@ -9,12 +9,14 @@ export default function Cardhome() {
       <Container
         maxWidth="md"
         sx={{
-          margin: "7.5vh",
+          marginLeft: "5vh",
+          marginTop: "10vh",
         }}
       >
         <Card
           sx={{
-            maxWidth: "80vh",
+            maxWidth: "85vh",
+            maxHeight: "60vh",
             background: "transparent",
             boxShadow: "none",
             textAlign: "justify",
@@ -25,24 +27,26 @@ export default function Cardhome() {
               variant="h1"
               fontWeight="bold"
               fontFamily="Inria Sans"
+              fontSize="9vh"
               color="#D4FFED"
             >
               Hola, Soy Angel Soto
             </Typography>
-            <br></br>
+
             <Typography
               variant="h2"
               fontWeight="bold"
               fontFamily="Inria Sans"
+              fontSize="7vh"
               color="#009FE4"
-              gutterBottom
             >
               Full-stack Developer
             </Typography>
             <br></br>
             <Typography
-              variant="h4"
+              variant="p"
               fontWeight="regular"
+              fontSize="3.5vh"
               fontFamily="Inria Sans"
               color="#ffffff"
               gutterBottom
@@ -52,10 +56,13 @@ export default function Cardhome() {
               Egestas quis ipsum suspendisse ultrices gravida.
             </Typography>
             <br></br>
+            <br></br>
             <Boton />
           </CardContent>
         </Card>
-        <br></br>
+        <br />
+        <br />
+
         <Socials />
       </Container>
     </>

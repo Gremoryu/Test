@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { Box, Toolbar, Button } from "@mui/material";
 import { AppBar, Container, Typography } from "@mui/material";
 
@@ -8,7 +8,7 @@ export default function Nav() {
   return (
     <AppBar
       position="fixed"
-      sx={{ background: "transparent", boxShadow: "none" }}
+      sx={{ backgroundColor: "#08203D", boxShadow: "none" }}
     >
       <Container maxWidth>
         <Toolbar disableGutters>
@@ -18,7 +18,7 @@ export default function Nav() {
             fontFamily="Inria Sans"
             align="left"
             color="#D4FFED"
-            sx={{ marginLeft: "10vh", marginTop: "2vh" }}
+            sx={{ marginLeft: "7vh"}}
             gutterBottom
           >
             Angel.
@@ -35,11 +35,11 @@ export default function Nav() {
                 key={option}
                 sx={{
                   color: "#D4FFED",
-                  display: "block",
+                  display: "flex",
                   fontFamily: "Inria Sans",
                   fontWeight: "bold",
                   fontSize: "4vh",
-                  marginLeft: "5vh",
+                  marginLeft: "4vh",
                 }}
               >
                 {option}
@@ -49,5 +49,5 @@ export default function Nav() {
         </Toolbar>
       </Container>
     </AppBar>
-  )
+  );
 }
