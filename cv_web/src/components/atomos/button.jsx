@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
@@ -23,21 +24,23 @@ const theme = createTheme({
 export default function button() {
   return (
     <ThemeProvider theme={theme}>
-      <Button
-        variant="contained"
-        color="primary"
-        size="large"
-        sx={{
-          fontWeight: "bold",
-          fontFamily: "Inria Sans",
-          fontSize: '2.5vh',
-          borderRadius: "10px",
-          boxShadow: "none",
-          textTransform:'none'
-        }}
-      >
-        Hire me
-      </Button>
+      <Link to="/information">
+        <Button
+          variant="contained"
+          color="primary"
+          size="large"
+          sx={{
+            fontWeight: "bold",
+            fontFamily: "Inria Sans",
+            fontSize: "2.5vh",
+            borderRadius: "10px",
+            boxShadow: "none",
+            textTransform: "none",
+          }}
+        >
+          Hire me
+        </Button>
+      </Link>
     </ThemeProvider>
   );
 }

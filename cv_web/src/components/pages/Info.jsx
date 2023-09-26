@@ -1,7 +1,9 @@
-import React from 'react'
-
+import React from "react";
+import Infotemp from "../templates/Infotemp";
 export default function Info() {
   return (
-    <div>Info</div>
-  )
+    <>
+      <Infotemp />
+    </>
+  );
 }

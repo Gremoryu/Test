@@ -1,5 +1,5 @@
 import React from "react";
-import Body from "../organismos/Body";
+import Body from "../organismos/BodyH";
 
 export default function Htemplate() {
   return (

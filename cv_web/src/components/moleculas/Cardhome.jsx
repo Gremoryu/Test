@@ -14,7 +14,7 @@ export default function Cardhome() {
       >
         <Card
           sx={{
-            maxWidth: "73vh",
+            maxWidth: "80vh",
             background: "transparent",
             boxShadow: "none",
             textAlign: "justify",
@@ -26,7 +26,6 @@ export default function Cardhome() {
               fontWeight="bold"
               fontFamily="Inria Sans"
               color="#D4FFED"
-              sx={{}}
             >
               Hola, Soy Angel Soto
             </Typography>
@@ -56,6 +55,7 @@ export default function Cardhome() {
             <Boton />
           </CardContent>
         </Card>
+        <br></br>
         <Socials />
       </Container>
     </>
