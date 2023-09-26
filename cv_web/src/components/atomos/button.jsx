@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import React from "react";
 
-import { createTheme } from "@mui/material/styles";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
   palette: {
@@ -22,8 +22,10 @@ const theme = createTheme({
 
 export default function button() {
   return (
-    <Button variant="contained" color={theme.palette.primary} size="large">
-      Hire Me
-    </Button>
+    <ThemeProvider theme={theme}>
+      <Button variant="contained" color="primary" size="large">
+        Hire Me
+      </Button>
+    </ThemeProvider>
   );
 }

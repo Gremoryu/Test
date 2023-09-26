@@ -1,12 +1,13 @@
 import React from "react";
 import Nav from "../moleculas/Nav";
-import Photo from "../atomos/photo";
+import Cardhome from "../moleculas/Cardhome";
+import '../css/body.css'
 
 export default function Body() {
   return (
-    <>
+    <div>
       <Nav />
-      <Photo />
-    </>
+      <Cardhome />
+    </div>
   );
 }
