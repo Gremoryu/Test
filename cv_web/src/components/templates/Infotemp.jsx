@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import BodyCV from "../organismos/BodyCV";
 
 export default function Infotemp() {
   return (
-    <div>Infotemp</div>
-  )
+    <>
+      <BodyCV />
+    </>
+  );
 }

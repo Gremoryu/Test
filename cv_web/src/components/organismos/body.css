@@ -1,0 +1,5 @@
+.bodyCv {
+    background-color: #08203D;
+    min-height: 100vh;
+    display: flex;
+}
