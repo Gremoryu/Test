@@ -23,8 +23,20 @@ const theme = createTheme({
 export default function button() {
   return (
     <ThemeProvider theme={theme}>
-      <Button variant="contained" color="primary" size="large">
-        Hire Me
+      <Button
+        variant="contained"
+        color="primary"
+        size="large"
+        sx={{
+          fontWeight: "bold",
+          fontFamily: "Inria Sans",
+          fontSize: '2.5vh',
+          borderRadius: "10px",
+          boxShadow: "none",
+          textTransform:'none'
+        }}
+      >
+        Hire me
       </Button>
     </ThemeProvider>
   );

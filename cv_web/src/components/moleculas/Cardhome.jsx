@@ -1,19 +1,23 @@
 import { Card, CardContent, Container, Typography } from "@mui/material";
 import React from "react";
 import Boton from "../atomos/button";
+import Socials from "../atomos/socials";
 
 export default function Cardhome() {
   return (
     <>
-      <Container maxWidth='md' sx={{
-        margin: '7.5vh'
-      }}>
+      <Container
+        maxWidth="md"
+        sx={{
+          margin: "7.5vh",
+        }}
+      >
         <Card
           sx={{
             maxWidth: "73vh",
             background: "transparent",
             boxShadow: "none",
-            textAlign: 'justify'
+            textAlign: "justify",
           }}
         >
           <CardContent>
@@ -52,6 +56,7 @@ export default function Cardhome() {
             <Boton />
           </CardContent>
         </Card>
+        <Socials />
       </Container>
     </>
   );
