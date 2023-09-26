@@ -37,7 +37,7 @@ export default function button() {
             boxShadow: "none",
             textTransform: "none",
           }}
-        >
+        > 
           Hire me
         </Button>
       </Link>
