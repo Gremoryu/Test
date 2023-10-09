@@ -1,0 +1,7 @@
+.img {
+    position: absolute;
+    left: 90vh;
+    transform: scale(0.75);
+    width: 100vh;
+    height: 100vh;
+}

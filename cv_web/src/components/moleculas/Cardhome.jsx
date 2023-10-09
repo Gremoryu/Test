@@ -15,6 +15,7 @@ export default function Cardhome() {
       >
         <Card
           sx={{
+            marginTop:'0vh',
             maxWidth: "85vh",
             maxHeight: "60vh",
             background: "transparent",
@@ -60,7 +61,6 @@ export default function Cardhome() {
             <Boton />
           </CardContent>
         </Card>
-        <br />
         <br />
 
         <Socials />
