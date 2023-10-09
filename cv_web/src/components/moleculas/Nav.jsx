@@ -3,7 +3,9 @@ import { Box, Toolbar, Button, createTheme } from "@mui/material";
 import { AppBar, Container, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { ThemeProvider } from "@mui/material";
-import '../css/body.css'
+import "../css/body.css";
+
+
 
 const options = [
   {
@@ -16,7 +18,7 @@ const options = [
   },
 ];
 
-const theme = createTheme({
+const Theme = createTheme({
   palette: {
     primary: {
       main: "#08203D",
@@ -34,8 +36,14 @@ const theme = createTheme({
 });
 
 export default function Nav() {
+  //Intento de modo oscuro
+  // const [theme, setTheme] = useState('dark')
+
+  // const switchTheme = () => 
+  //   theme === 'dark' ? setTheme('light') : setTheme('dark')
+
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={Theme}>
       <AppBar
         position="fixed"
         sx={{ backgroundColor: "#08203D", boxShadow: "none" }}
@@ -84,10 +92,11 @@ export default function Nav() {
                   </Button>
                 </Link>
               ))}
+              {/* <Button variant="contained" color="primary" size="large" onClick={switchTheme}>Modo Oscuro</Button> */}
             </Box>
           </Toolbar>
         </Container>
-      </AppBar>
+      </AppBar> 
     </ThemeProvider>
   );
 }
